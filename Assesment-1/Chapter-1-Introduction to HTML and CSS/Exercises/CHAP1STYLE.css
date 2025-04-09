@@ -1,0 +1,50 @@
+
+
+body {
+    background-color: #ffb43a;
+    color: #f8e2bd;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+
+
+h1 {
+
+background-color: #ffb43a;
+text-align: center;
+color: #4f3101;
+line-height: 200%;
+font-family: Georgia, "Times New Roman", serif;
+ 
+}
+
+h2 {
+  background-color: #4f3101;
+  color: #f8e2bd;
+font-family: Georgia, "Times New Roman", serif;
+
+}
+ 
+p {
+
+font-size: 1.em;
+text-indent: 3 em;
+color: #201401;
+}
+
+ul {
+  font-size: 1.em;
+  text-indent: 3 em;
+  color: #201401;
+}
+
+ol {
+  font-size: 1.em;
+  text-indent: 3 em;
+  color: #201401;
+}
+
+footer {
+  color: #201401;
+}
+

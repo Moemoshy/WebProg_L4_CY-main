@@ -1,0 +1,261 @@
+<!--### One-page website :ballot_box_with_check:
+
+Pick a television series, film or game and design a really simple one-page website (just text, no images). Your website should include:
+
+* An overview of the plot, key information, cast and/or creative team, characters and any reviews you can find. 
+* A nav bar at the top which allows the user to quickly navigate to sections further down the page (anchor Ids).
+* A link to the actual website of the film/game etc. which opens in a new tab when clicked. 
+* Use of an external CSS file to style elements creatively (avoid inline styling and use classes instead).
+* At least two classes. 
+* One link styled as a button.
+
+### Multi-page website (Bonus - Optional)
+
+Using the one-page website you created, clone it into a new directory and split the information down into a simple multi-page website.
+
+* An individual page for: plot, key information, cast and/or creative team, characters and any reviews you can find. 
+* Put your new pages in a subdirectory called "pages".
+* Ensure that each page has a navigation bar.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Truman Show</title>
+    <link rel="stylesheet" href="CHAP2style.css">
+
+
+    <style>
+        .background-color {
+            background-color: #080812;
+            color: white;
+        }
+        .padding {
+            padding: 20px;
+        }
+        .center-align {
+             text-align: center;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #111128; 
+    color: white; 
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+
+.link-button:hover {
+    background-color: #0056b3; 
+}
+
+
+.link-button:focus {
+    outline: 3px solid #ffcc00; 
+}
+    </style>
+</head>
+
+
+<body class="background-color">
+    <h1>The Truman Show</h1>
+
+    <nav class="center-align">
+        <a href="#plot">Plot</a>
+        <a href="#key-info">Key Information</a>
+        <a href="#cast">Cast</a>
+        <a href="#creative-team">Creative Team</a>
+        <a href="#characters">Characters</a>
+        <a href="#reviews">Reviews</a>
+    </nav>
+
+    <section id="plot">
+        <h2>Plot</h2>
+        <p>The Truman Show is a show about a man named Truman who was born and sold to be a star of a show named 
+            "The Truman Show" where he is unaware of. He lives his life as normally as everyone around him make it to. 
+            His life is broadcasted to billions of people around the world 24/7, but one day, Truman notices something off about his day.</p>
+    </section>
+
+    <section id="key-info">
+        <h2>Key Information</h2>
+        <ul>
+            <li><b>Title:</b> The Truman Show</li>
+            <li><b>Release Year:</b>1998</li>
+            <li><b>Director:</b>Peter Weir</li>
+            <li><b>Writer:</b>Andrew Niccol</li>
+            <li><b>Genre:</b>Psychological Drama, Satire, Sci-Fi</li>
+            <li><b>Starring:</b></li>
+            <blockquote>
+                <p>&rarr; Jim Carrey as Truman Burbank</p>
+                <p>&rarr; Laura Linney as Meryl Burbank / Hannah Gill</p>
+                <p>&rarr; Ed Harris as Christof</p>
+                <p>&rarr; Noah Emmerich as Marlon</p>
+                <p>&rarr; Natascha McElhone as Sylvia / Lauren Garland</p>
+            </blockquote> 
+        </ul>
+    </section>
+
+    <section id="cast">
+        <h2>Cast</h2>
+        <h3>Main Cast</h3>
+        <ul>
+            <li><u>Jim Carrey</u> – Truman Burbank</li>
+            <li><u>Laura Linney </u>– Meryl Burbank / Hannah Gill (Truman's wife, an actress)</li>
+            <li><u>Ed Harris</u> – Christof (The show's creator and director)</li>
+            <li><u>Noah Emmerich</u> – Marlon / Louis Coltrane (Truman’s best friend, an actor)</li>
+            <li><u>Natascha McElhone</u> – Sylvia / Lauren Garland (Truman’s true love, who tries to warn him)</li>
+        </ul>
+
+        <h3>Supporting Cast</h3>
+        <ul>
+            <li><u>Holland Taylor</u> – Truman’s Mother / Angela Burbank</li>
+            <li><u>Brian Delate</u> – Truman’s Father / Kirk Burbank</li>
+            <li><u>Paul Giamatti</u> – Simeon (Control room technician)</li>
+            <li><u>Peter Krause</u>– Lawrence (Another TV crew member)</li>
+            <li><u>Harry Shearer</u> – Mike Michaelson (TV show host/interviewer)</li>
+            <li><u>Philip Baker Hall</u> – Network Executive</li>
+            <li><u>O-Lan Jones</u> – Truman’s Neighbor (Mrs. Langley)</li>
+            <li><u>Jeanette Goldstein</u>– Nurse at hospital</li>
+            <li><u>Joel McKinnon Miller</u> – Control Room Director</li>
+        </ul>
+    </section>
+
+    <section id="creative-team">
+        <h2>Creative Team</h2>
+        <h3>Director:</h3>
+        <blockquote>
+            <p>&rarr;Peter Weir – Acclaimed Australian filmmaker known for Dead Poets Society (1989) and Witness (1985). His vision brought a mix of drama, satire, and psychological depth to the film.</p>
+        </blockquote>
+
+        <h3>Writer:</h3>
+        <blockquote>
+            <p>&rarr;Andrew Niccol – Screenwriter and producer who originally envisioned The Truman Show as a dark sci-fi thriller set in New York. He later refined it into a more grounded satire with Peter Weir’s guidance. Niccol is also known for writing Gattaca (1997).</p>
+        </blockquote>
+
+        <h3>Producers:</h3>
+        <blockquote>
+            <p>&rarr;Scott Rudin – One of Hollywood’s most respected producers, known for films like No Country for Old Men (2007) and The Social Network (2010).</p> 
+            <p>&rarr;Andrew Niccol – Also co-produced the film, helping shape its unique concept.</p>
+            <p>&rarr;Edward S. Feldman – Veteran producer involved in various successful projects.</p>
+        </blockquote>
+
+        <h3>Executive Producers:</h3>
+        <blockquote>
+            <p>&rarr;Lynn Pleshette – Helped with development and securing studio interest.</p>
+            <p>&rarr;Adam Schroeder – Assisted in production and studio coordination.</p>
+        </blockquote>
+
+        <h3>Cinematographer (Director of Photography):</h3>
+        <blockquote>
+            <p>&rarr;Peter Biziou – Award-winning cinematographer who used a mix of surveillance-style shots and traditional cinematography to enhance the film’s reality TV aesthetic.</p>
+        </blockquote>
+
+        <h3>Editor:</h3>
+        <blockquote>
+            <p>&rarr;William M. Anderson – His editing helped maintain the illusion of a live broadcast while balancing emotional moments.</p>
+        </blockquote>
+
+        <h3>Music Composer:</h3>
+        <blockquote>
+            <p>&rarr;Burkhard Dallwitz – Provided the film’s haunting and emotional score.</p>
+            <p>&rarr;Philip Glass – Contributed additional music, including pieces from his existing compositions, adding to the film’s surreal and dramatic feel.</p>
+        </blockquote>
+
+        <h3>Production Design:</h3>
+        <blockquote>
+            <p>&rarr;Dennis Gassner – Designed the picture-perfect world of Seahaven, inspired by master-planned communities like Seaside, Florida.</p>
+        </blockquote>
+
+        <h3>Costume Design:</h3>
+        <blockquote>
+            <p>&rarr;Marilyn Matthews – Created a wardrobe reflecting a 1950s-inspired, idealized American suburban aesthetic, reinforcing the artificial nature of Truman’s world.</p>
+        </blockquote>
+    </section>
+
+    <section id="characters">
+        <h2>Characters</h2>
+        <ul>
+            <li>Truman Burbank</li>
+            <li>Meryl Burbank / Hannah Gill</li>
+            <li>Christof</li>
+            <li>Marlon / Louis Coltrane</li>
+            <li>Sylvia / Lauren Garland</li>
+            <li>Angela Burbank (Truman’s Mother)</li>
+            <li>Kirk Burbank (Truman’s Father)</li>
+            <li>Mike Michaelson</li>
+            <li>Simeon</li>
+            <li>Lawrence</li>
+            <li>Network Executive</li>
+            <li>Truman’s Neighbor (Mrs. Langley)</li>
+            <li>Hospital Nurse</li>
+            <li>Control Room Director</li>
+        </ul>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <p>(Kendrick, 2023)</p>
+        <blockquote>
+            <p>The Truman Show’s new 4K/Dolby Vision presentation offers a solid improvement over Paramount’s 2008 Blu-ray, 
+                which offered a decent transfer that was marred by too much DNR. The new 4K disc eliminates that problem, offering a 
+                presentation that is much more nuanced and film-like, with fine detail that accentuates the smooth textures of Seahaven’s 
+                constructed surfaces (as well as the ostentatious tweed suits that Truman wears) despite the film’s unnaturally bright 
+                lighting. The improved detail does work to the film’ detriment in its one major special effects shot, however, which reveals 
+                the Seahaven studio as an all-too-obvious matte painting. The color also appears to be more intense, with an emphasis on the 
+                deeply saturated primary colors that are so crucial to the film’s slightly unreal quality. Dark scene also fare very well, 
+                with strong blacks and good shadow detail. (A quick note on the aspect ratio: The transfer is matted at 1.85:1, the aspect 
+                ratio used on the 2005 Special Collector’s Edition DVD. The 2008 Blu-ray was matted at 1.78:1, while the original 1998 DVD 
+                transfer was matted at 1.66:1. I believe that Peter Weir intended it to be projected at 1.66:1 to more closely mimic a 
+                cathode ray television screen’s dimensions, but most—if not all—U.S. theaters projected it at 1.85:1, as is their custom 
+                for films shot flat.) The 4K disc also upgrades the soundtrack from Dolby Digital TrueHD 5.1 to Dolby Atmos, which has great 
+                depth and surround activity and also really shows off Burkhard Dallwitz’s musical score. The storm-at-sea sequence near the 
+                end of the film is particularly enveloping, with a good use of the low end and surrounds.
+
+            Unfortunately, despite being billed as a “25th Anniversary Edition,” there are no new supplements on the 4K disc. Instead, all 
+            the extras are the same as were found on the 2008 Blu-Ray disc and the 2005 Special Collector’s Edition DVD. The two-part making-of 
+            documentary How’s It Going to End? The Making of The Truman Show covers all the major aspects of the film’s production, from the 
+            lengthy screenwriting period in which director Peter Weir had writer Andrew Niccol change quite a few things, to scouting locations, 
+            to the actual shooting. Put together, the two parts of the doc run roughly 40 minutes, although it’s not entirely clear why it was 
+            split up (to some extent, the first half tends to deal more with the ideas behind the film, whereas the second part deals more with 
+            the nuts and bolts of production). Interviews include Weir, producer Edward S. Feldman, and stars Laura Linney, Ed Harris, and Noah \
+            Emmerich. Carrey only appears in circa-1998 interviews, but Niccol is completely MIA. The film’s effectively subtle visual effects 
+            are covered in the 13-minute featurette “Faux Finishing: The Visual Effects of The Truman Show,” which includes interviews with 
+            several members of the visual effects crew. The disc is rounded out with four deleted scenes, a thorough photo gallery of production 
+            pics, a pair of trailers, and a pair of TV spots.</p>
+        </blockquote>
+        <em>Kendrick, J. (2023) ‘The Truman Show (4K UHD review)’, QNetwork. Available at: <a href="https://www.rottentomatoes.com/m/truman_show" class="link-button">https://www.qnetwork.com/review/4623</a> (Accessed: [10/03/2025]).</em>
+    </section>
+
+    <footer>Assessment 1. Chapter 2. 2025. Moesha</footer>
+</body>
+
+ 
+</html>
+
+<!--
+
+Video Showcase: 
+
+https://drive.google.com/file/d/13m3aA7-OPc8yCKuJBcSytpMsh_iz7VAW/view?usp=sharing
+-->

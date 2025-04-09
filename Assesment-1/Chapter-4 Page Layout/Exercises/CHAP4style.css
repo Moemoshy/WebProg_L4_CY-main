@@ -1,0 +1,124 @@
+/* Webpage Layout */
+
+body {
+  margin: 0%;
+}
+  
+* {
+  box-sizing: border-box; /*includes the border and padding in the element*/
+}
+
+.column {
+  float: left; /*Specifies where the image is positioned or "floats"*/
+  padding: 10px;
+}
+
+.left {
+  width: 65%;
+}
+  
+.right {
+  width: 35%;
+  background-color:  #172d67;
+  margin-top: 1%;
+  margin-bottom: 1%;
+    
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+/*Header Design*/
+header, nav{
+  background-color: #17072b;
+  color: white;
+  margin: 0%;
+  border: 0%;
+  padding: 10px;
+}
+
+/* Text Designs */
+
+header {
+  text-decoration: underline;
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+header, h1, h2 {
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: white;
+}
+
+nav, li, p, footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.sidebarul {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-grid; /*makes an inline grid container*/
+  margin: 10px;
+  padding: 0;
+  border: 10px;
+  font-size: 10px;
+}
+
+
+.firstul {
+  text-align: center;
+}
+
+/*Image Styling and Structure*/
+.element {
+  height: 250px;
+  width: 500px;
+}
+
+.imgForbox {
+  height: 200px;
+  width: 200px;
+}
+
+
+/*Sidebar Structure and Design*/
+
+.sidebarul a {
+  text-decoration: none; /*Removes styling of texts*/
+  color: white;
+  font-size: small;
+  display: inline; 
+}
+
+.sidebarul li {
+  margin-bottom: 10px;
+}
+
+
+/*Footer*/
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #8c15e9;
+  margin: 0%;
+  border: 0%;
+  padding: 0%;
+}
+

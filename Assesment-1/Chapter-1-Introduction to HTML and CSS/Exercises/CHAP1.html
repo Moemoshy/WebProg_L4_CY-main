@@ -1,0 +1,111 @@
+<!--Recipe page ☑️
+Create a web page containing information on your favourite recipe. The page should include
+
+Appropriate tags to structure text (e.g. h and p tags).
+A h1 tag for the recipe name
+A p tag for a description of the recipe
+A h2 tag for the ingredients
+An unorder list for the ingredients
+An h2 tag for the method
+An order list for the steps involved in the recipe 'method'
+Make sure the code is indented and spaced properly.
+Add comments explaining what each element does.
+HTML and CSS Resource (Bonus - Optional)
+Create a HTML & CSS quick-reference guide that covers all of the tags we've covered so far (and a few extras) with a description of how to use them and code examples.
+
+Use an external stylesheet.
+Be creative with your styling, but keep it professional.
+Use the <code> and <pre> HTML tags to include code examples.
+Include a minimum of 10 HTML tags.
+Include a minimum of 8 CSS properties.
+Include a variety of different headers.
+Make sure the code is indented and spaced properly.-->
+
+<!DOCTYPE html> <!--This indicates that what we are using is HTML-->
+<html lang="en"> <!--Identifies that the language is English-->
+
+<head> <!--Contains Meta-data. It's not displayed in the page itself, and it tells us what is in the HTML-->
+    <meta charset="UTF-8"> <!--Makes it possible to use characters not in the ASCII-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Makes sure the webpage can be viewed properly and spread through the whole web page properly -->
+    <title>Recipe Page</title> <!--Displayed on the "bookmark" part on top of the webpage-->
+
+    <link rel="stylesheet" type="text/css" href="CHAP1STYLE.css">
+</head>
+ 
+<style>
+    body {
+        background-color: bisque;
+    }
+</style>
+
+<body> <!--Everything within the body is seened in the website-->
+
+    <a href="https://www.shutterstock.com/image-illustration/lots-fresh-chocolate-chip-cookies-600nw-2162800413.jpg"><img src="cookie.webp" alt="Cookie" height="200" width="1500"></a>
+
+    <h1>Brown Butter Chocolate Chip Cookies</h1> 
+    <!--Headings are uch like headings in documents; Titles of something. The size depends on the number besides the "h"-->
+
+    <p>Cookies carry a certain hint of nostaligia in them, whether growing up you eat cookies all the time or not! A cold glass of milk 
+        and a plate of cookies has always been enticing to any age. So! Here we will learn how to make a batch of brown butter chocolate 
+        chip cookies. The nuttiness of the browned butter adds depth and richness to the already crispy-edged, chewy center, indulgent cookies 
+        that you will surely enjoy!</p> <!--"p" stands for paragraph and it displays characters in normal paragraph format-->
+
+        <br> <!--Provideds a space inbetween syntaxes.-->
+
+        <h2>Ingredients</h2>
+
+        <ul> <!--"Unordered list". It makes a list without an order. It just has bullet points-->
+            <li>&#189; C <b>White</b> Sugar</li>
+            <li>&frac34; C <b>Brown</b> Sugar</li>
+            <li>1 tspn Salt</li>
+            <li>&#189; C <b>Melted</b> Butter</li> <!--"li" means list-->
+            <li>1 <b>Large</b> Egg</li>
+            <li>1 tspn Vanilla</li>
+            <li>1 & &frac14; C Flour</li>
+            <li>&#189; tspn Baking Soda </li>
+            <li>4 8 oz <b>Chopped</b> Dark Chocolate</li>
+            <li>1 tspn Coffee Powder</li>
+        </ul> <!--All the fractions are put in by html symbols-->
+
+        <br>
+
+        <h2>Equipment</h2>
+
+        <ul>
+            <li>Measuring cups</li>
+            <li>Measuring spoons</li>
+            <li>Mixing bowl</li>
+            <li>Spatula</li>
+            <li>Baking sheet/ Baking tray</li>
+            <li>Baking paper/ Baking mat </li>
+        </ul>
+
+        <br>
+
+        <h2>Instructions</h2>
+
+        <ol> <!--"ordered list". Ordered lists are lists with numbers on it. It's used to make lists that needs order.-->
+            <li>Preheat oven to 375 Fahrenheit (190 Celsius)</li>
+            <li>Melt the butter in a pan until golden brown and you can smell the nuttiness. Let it cool down.</li>
+            <li>Mix all the wet ingridients (Butter, Eggs, Sugar [White & Brown], Vanilla) and the salt and coffee powder.</li>
+            <li>Mix in the flour and baking soda.</li>
+            <li>Mix in the dark chocolate.</li>
+            <li>Let it sit out for the butter to solidify a bit, or place in the refrigirator to speed up the process</li>
+            <li>Roll them up into balls. The size depends on your liking, and space them with atleast 3 inches in between.</li>
+            <li>Cook in the oven for approximately 12-14 minutes depending on size.</li>
+        </ol>
+
+    
+        <footer>Assessment 1. Chapter 1. 2025. Moesha</footer>
+
+</body>
+
+</html> <!--This tag is the root tag for the html-->
+
+<!--
+
+Video Showcase: 
+
+https://drive.google.com/file/d/13m3aA7-OPc8yCKuJBcSytpMsh_iz7VAW/view?usp=sharing
+-->

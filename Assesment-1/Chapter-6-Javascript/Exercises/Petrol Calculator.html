@@ -1,0 +1,93 @@
+<!--Create a simple petrol calculator. Your petrol calculator must include:
+
+* A field for the user the enter the cost of petrol per liter. This should have a default value of 1.72
+* A field for the user to enter the number of liters purchased. This should have a default value of 0
+* A button that when clicked calculates the total cost of the petrol purchased and displays the result to the screen
+* A p tag to display the total cost
+* Comments throughout every file.
+* Buttons should include hover effects, and fields should clearly "focus" when in use.
+* Clean and professional creative styling.-->
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+  
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moe Petrol Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="PC_stylesheet.css">
+
+
+</head>
+
+
+<body>
+
+    <!--Frontend-->
+
+    <h1>Petrol Calculator</h1>
+
+     <!--Label and Input gives a place where users can input their data.-->
+    <label for="Ltrs">Liters:</label>
+
+    <input type="number" id="Ltrs" value="0.00"> 
+
+    <label for="cost">Cost per Liter (AED):</label>
+
+    <input type="number" id="cost" value="1.72" step="0.01"> 
+
+     <!--Button gives users an element to click to get their results. It calls the result from the funtion below.-->
+    <button onclick="calculateCost()">Calculate</button>
+
+    <!--A place to call the total cost through "document.getElementById("T_Cost").innerText = `Total Cost: AED ${totalCost.toFixed(2)}`;"-->
+    <p id="T_Cost"></p> 
+
+
+    <!--Backend-->
+
+    <script>
+
+        //This whole function calculates the cost of the petrol//
+        function calculateCost() 
+
+        {   //"const" is used to permanently set values needed.//
+            //"parseFloat"parses a string argument and returns  a floating point number. //
+
+            const liters = parseFloat(document.getElementById("Ltrs").value) || 0;
+
+            //Values are set to 0 so that it can be altered and not change the correct result.//
+
+            const costPerLiter = parseFloat(document.getElementById("cost").value) || 0;
+
+            const totalCost = liters * costPerLiter; //Means that liters will be multiplied to costPerLiter.//
+
+            document.getElementById("T_Cost").innerText = `Total Cost: AED ${totalCost.toFixed(2)}`;
+        }
+
+
+        // Show default cost on page load//
+        window.onload = calculateCost;
+
+
+    </script>
+
+
+</body>
+
+
+</html>
+
+<!--
+
+Video Showcase: 
+
+https://drive.google.com/file/d/13m3aA7-OPc8yCKuJBcSytpMsh_iz7VAW/view?usp=sharing
+-->

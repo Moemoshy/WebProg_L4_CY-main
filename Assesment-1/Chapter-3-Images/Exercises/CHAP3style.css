@@ -1,0 +1,33 @@
+  body {
+    margin: 100px auto;
+    width: max-content;
+    background-color: antiquewhite;
+  }
+
+h1 {
+  text-align: center;
+}
+ 
+  p{
+    text-align: center;
+    font-size: .90em;
+    text-indent: 3 em;
+  }
+ 
+.image-container img {
+    width: 200px; 
+    height: auto; 
+}
+
+#image2 {
+    filter: saturate(30%);
+}
+
+#image3 {
+    filter: invert(250%);
+}
+
+#image4 {
+    filter: invert(100%);
+}
+ 
